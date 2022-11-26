@@ -9,5 +9,4 @@
  >Автор\Full-stack разработчик:
  >> Лиховских Дмитрий Андреевич
  ---
->''' <img alt="logo" src="logo.png" width="100px" stail="vertical-align:bottom"> ''' <br>
 >>[Просмотреть проек](http://sipios.roza-vetrov.pro/)
