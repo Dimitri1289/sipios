@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* анимация при загрузке */
+
+.cssload-thecube {
+	width: 122px;
+	height: 122px;
+	margin: 0 auto;
+	margin-top: 181px;
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+}
+.cssload-thecube .cssload-cube:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(43,160,199);
+	animation: cssload-fold-thecube 2.76s infinite linear both;
+		-o-animation: cssload-fold-thecube 2.76s infinite linear both;
+		-ms-animation: cssload-fold-thecube 2.76s infinite linear both;
+		-webkit-animation: cssload-fold-thecube 2.76s infinite linear both;
+		-moz-animation: cssload-fold-thecube 2.76s infinite linear both;
+	transform-origin: 100% 100%;
+		-o-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		-webkit-transform-origin: 100% 100%;
+		-moz-transform-origin: 100% 100%;
+}
+.cssload-thecube .cssload-c2 {
+	transform: scale(1.1) rotateZ(90deg);
+		-o-transform: scale(1.1) rotateZ(90deg);
+		-ms-transform: scale(1.1) rotateZ(90deg);
+		-webkit-transform: scale(1.1) rotateZ(90deg);
+		-moz-transform: scale(1.1) rotateZ(90deg);
+}
+.cssload-thecube .cssload-c3 {
+	transform: scale(1.1) rotateZ(180deg);
+		-o-transform: scale(1.1) rotateZ(180deg);
+		-ms-transform: scale(1.1) rotateZ(180deg);
+		-webkit-transform: scale(1.1) rotateZ(180deg);
+		-moz-transform: scale(1.1) rotateZ(180deg);
+}
+.cssload-thecube .cssload-c4 {
+	transform: scale(1.1) rotateZ(270deg);
+		-o-transform: scale(1.1) rotateZ(270deg);
+		-ms-transform: scale(1.1) rotateZ(270deg);
+		-webkit-transform: scale(1.1) rotateZ(270deg);
+		-moz-transform: scale(1.1) rotateZ(270deg);
+}
+.cssload-thecube .cssload-c2:before {
+	animation-delay: 0.35s;
+		-o-animation-delay: 0.35s;
+		-ms-animation-delay: 0.35s;
+		-webkit-animation-delay: 0.35s;
+		-moz-animation-delay: 0.35s;
+}
+.cssload-thecube .cssload-c3:before {
+	animation-delay: 0.69s;
+		-o-animation-delay: 0.69s;
+		-ms-animation-delay: 0.69s;
+		-webkit-animation-delay: 0.69s;
+		-moz-animation-delay: 0.69s;
+}
+.cssload-thecube .cssload-c4:before {
+	animation-delay: 1.04s;
+		-o-animation-delay: 1.04s;
+		-ms-animation-delay: 1.04s;
+		-webkit-animation-delay: 1.04s;
+		-moz-animation-delay: 1.04s;
+}
+
+
+
+@keyframes cssload-fold-thecube {
+	0%, 10% {
+		transform: perspective(228px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		transform: perspective(228px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		transform: perspective(228px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-o-transform: perspective(228px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-o-transform: perspective(228px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-o-transform: perspective(228px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-ms-transform: perspective(228px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-ms-transform: perspective(228px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-ms-transform: perspective(228px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-webkit-transform: perspective(228px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-webkit-transform: perspective(228px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-webkit-transform: perspective(228px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-moz-transform: perspective(228px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-moz-transform: perspective(228px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-moz-transform: perspective(228px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+/* анимация при загрузке */
+/* мягкая прокрутка */
+body {
+  scroll-behavior: smooth; margin:0}
+}
+/* мягкая прокрутка */
+.top_L {background-image:url(/img/top_l.png); background-repeat:repeat-x}
+.top_R {background-image:url(/img/top_r.png); background-repeat:repeat-x}
+.ten {background-image:url(/img/top_ten.png);background-repeat: no-repeat; background-position:center top}
+.top {background-image:url(/img/top.png); background-repeat: no-repeat;background-position:center}
+.pak_r {background-image:url(/img/right_pak.png); background-size:250px 498px; background-repeat: no-repeat; background-position:left;font-size:13px}
+.pak_c {background-image:url(/img/center_pak.png); background-size:250px 498px; background-repeat: no-repeat; background-position:left;font-size:13px}
+.pak_l {background-image:url(/img/left_pak.png); background-size:250px 498px; background-repeat: no-repeat; background-position:left;font-size:13px}
+.menu_top {background-image:url(/img/fon_menu.png); background-repeat: repeat}
+.grin {background-image:url(/img/center_top.png); background-size:824px 138px; background-repeat: no-repeat; background-position:center;font-size:16px; text-align:justify}
+.red {background-image:url(/img/center_center.png); background-size:824px 138px; background-repeat: no-repeat; background-position:center;font-size:16px; text-align:justify}
+.blue {background-image:url(/img/center_bottom.png); background-size:824px 138px; background-repeat: no-repeat; background-position:center;font-size:16px; text-align:justify}
+.vse {background-image:url(/img/vse.png); background-size:812px 300px; background-repeat: no-repeat; background-position:center;font-size:16px; text-align:justify; margin-left:15px; font-size:11px}
+.grin_menu { border-bottom-style: inset; border-bottom-color: #7ebc80; border-top-style: outset; border-top-color: #7ebc80}
+.red_menu { border-bottom-style: inset; border-bottom-color: #d3917f; border-top-style: outset; border-top-color: #d3917f}
+.blue_menu { border-bottom-style: inset; border-bottom-color: #96b6cc; border-top-style: outset; border-top-color: #96b6cc}
+.portfel {background-image:url(/img/portfel.png); background-size:500px 81px; background-repeat: no-repeat; background-position:left; margin-left:50px; font-size:18px}
+.voprosnik {background-image:url(/img/voprocnik.png); background-size:839px 184px; background-repeat: no-repeat; background-position:center }
+.globus {background-image:url(/img/globus.png); background-size:370px 320px; background-repeat: no-repeat; background-position:right }
+.jus {text-align:justify}
+.bottom {background-image:url(/img/bottom.png); background-repeat: no-repeat;background-position:center;background-size:834px 670px;}
+.marg12 {margin-left:6px}
+.fixed_top {
+display: block;
+position: fixed;
+top: 0px;
+left:0px;
+right:0px;
+z-index: 99999}
+.marg {margin-top:8px}
+.marg_r {margin-right:90px}
+h2 { margin-top:4px; margin-bottom:4px}
+.text_all {font-size:16px; text-align:justify}
+a:link {color:#ffffff; text-decoration:none; font-size:12px}
+a:visited {color:#ffffff;  text-decoration:none; font-size:12px}
+a:hover {color:#c0ffaa;  text-decoration:none; font-size:12px}
+a:active, a:focus { outline: none}
+input, image {outline:none}
+input:active, image:active {outline:none}
+
+
+
+
+.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		display: none;
+		pointer-events: none;
+	}
+
+	.modalDialog:target {
+		display: block;
+		pointer-events: auto;
+	}
+
+	.modalDialog > div {
+		width: 60%;
+		position: relative;
+		margin: 6% auto;
+		padding: 5px 5px 5px 5px;
+		border-radius: 10px;
+		background-image:url(../img/f1.png);
+		
+		background: -moz-linear-gradient(#fff);
+		background: -webkit-linear-gradient(#fff);
+		background: -o-linear-gradient(#fff);
+	}
+
+	.close {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+	.style11 {color:#FFFFFF}
+
+	.close:hover { background: #00d9ff; }
+	ul{font-size:14px; color:#c1c9c9; font-family:Verdana, Arial, Helvetica, sans-serif;}
+	.invisibl { visibility:collapse}
+	
+	a.rollover {
+    background: url(img/battom.png); /* ???? ? ????? ? ???????? ????????  */
+    display: block; /*  ??????? ??? ??????? ??????? */
+    width: 314px; /* ?????? ??????? */
+    height: 29px; 
+	border: 0;/*  ?????? ??????? */
+   }
+   a.rollover:hover {
+    background: url(img/battom1.png);
+	width: 314px; /* ?????? ??????? */
+    height: 29px; 
+	border: 0;/*  ?????? ??????? */ /* ???? ? ????? ? ?????????? ????????  */
+   }
+   .btn {background: url(img/battom.png);}
+    .btn:hover {border:0; background:transparent url("img/battom1.png") no-repeat 0 0;}
+	
+	
+	/*  прелоадер */
+	
+	#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #ffffff;
+z-index: 30;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(img/oval.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
+/*  прелоадер
+<div id="p_prldr"><div class="cssload-thecube">
+	<div class="cssload-cube cssload-c1"></div>
+	<div class="cssload-cube cssload-c2"></div>
+	<div class="cssload-cube cssload-c4"></div>
+	<div class="cssload-cube cssload-c3"></div>
+</div></div>
+ */
+ 
+ 
+ 
+ /*для меню
+ */
+ .font {font-size:13px}
+ .p {text-align:justify}
+  * {
+    box-sizing: border-box;
+}
+body {
+    color: #333;
+    font: 1em 'Open Sans', sans-serif;
+    background-color: ;
+}
+/*для меню
+ */
